@@ -161,7 +161,7 @@ check
 /usr/local/mysql/bin/mysql -uroot -p$my_passwd -e "start slave;"
 check
 ###check repecation status
-show=`/usr/local/mysql/bin/mysql -uroot -p$my_passwd -e "show slave status\G;"|grep 'Slave_IO_Running:'`
+show=`/usr/local/mysql/bin/mysql -uroot -p$my_passwd -e "show slave status\G;"|grep -A1 'Slave_IO_Running:'`
 slaveIO=`echo $show|awk -F':' '{print $2}'`
 Slave_SQL=`echo $show|awk -F':' '{print $2}'`
 
