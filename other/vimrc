@@ -18,6 +18,8 @@ au FileType javascript setlocal dict+=~/.vim/dict/javascript.dict
 au FileType html setlocal dict+=~/.vim/dict/javascript.dict
 au FileType html setlocal dict+=~/.vim/dict/css.dict
 "
+"fix the xterm for vim
+set t_ti= t_te=
 "syntastic相关
 execute pathogen#infect()
 let g:syntastic_python_checkers=['pylint']
