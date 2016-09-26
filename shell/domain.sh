@@ -82,7 +82,7 @@ domainBind="`echo;cat /game/$mysite/nginx.combine.s.${mysite}_$(date +%F) /game/
     do
     sqgame "$mysite" sendrtxmail "$rtxuser,$create_user" "神曲合区域名解析" "`echo ${gameName}"$domainBind"|sed ':label;N;s/\n/%0d/g;b label'`" 1 2>&1 >> domain.log
     wait
-    [ $(tail -1 domain.log|awk '{print$10}') == "OK" ] && break
+    [ $(tail -1 domain.log|grep -ic "OK") -eq 1 ] && break
     sleep 30
     done
     echo "0" > "$dir"/check.deploy
