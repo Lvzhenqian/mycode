@@ -35,6 +35,9 @@ filetype indent on
 
 "fix the xterm for vim
 set t_ti= t_te=
+nnoremap <c-l> @=((foldclosed(line('.')) > 0) ? 'zR' : 'zM')<CR>
+nmap <c-k> :set nonu<CR>
+nmap <c-j> :set nu<CR>
 
 " base
 set nocompatible                " don't bother with vi compatibility

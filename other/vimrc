@@ -61,6 +61,9 @@ set foldenable      " 允许折叠
 set foldmethod=indent   "缩进折叠
 "set foldmethod=syntax
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR> "空格来开关折叠
+nnoremap <c-l> @=((foldclosed(line('.')) > 0) ? 'zR' : 'zM')<CR>
+nmap <c-k> :set nonu<CR>
+nmap <c-j> :set nu<CR>
 set nocompatible  "去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
 " 显示中文帮助
 if version >= 603
