@@ -63,10 +63,10 @@ wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-6.repo
 mysql_5_1=http://mirrors.sohu.com/mysql/MySQL-5.1/mysql-5.1.73-linux-$ar-glibc23.tar.gz
 mysql_5_6=http://mirrors.sohu.com/mysql/MySQL-5.6/mysql-5.6.29-linux-glibc2.5-$ar.tar.gz
 mysql_5_7=http://mirrors.sohu.com/mysql/MySQL-5.7/mysql-5.7.12-linux-glibc2.5-$ar.tar.gz
-apc_2_2=http://mirror.bit.edu.cn/apache/httpd/httpd-2.2.31.tar.gz
-apc_2_4=http://mirrors.hust.edu.cn/apache/httpd/httpd-2.4.20.tar.gz
-apr=http://mirrors.hust.edu.cn/apache/apr/apr-1.5.2.tar.gz
-apr_util=http://mirrors.hust.edu.cn/apache/apr/apr-util-1.5.4.tar.gz
+apc_2_2=http://mirrors.aliyun.com/apache/httpd/httpd-2.2.31.tar.gz
+apc_2_4=http://mirrors.aliyun.com/apache/httpd/httpd-2.4.23.tar.gz
+apr=http://mirrors.aliyun.com/apache/apr/apr-1.5.2.tar.gz
+apr_util=http://mirrors.aliyun.com/apache/apr/apr-util-1.5.4.tar.gz
 php_5_5=http://cn2.php.net/distributions/php-5.5.34.tar.gz
 php_5_6=http://hk2.php.net/distributions/php-5.6.20.tar.gz
 php_7_0=http://cn2.php.net/distributions/php-7.0.5.tar.gz
