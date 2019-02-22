@@ -53,7 +53,7 @@ passwod(){
 /etc/init.d/iptables stop
 chkconfig --level 3 iptables off
 killall yum-updatesd;killall yum-updatesd-helper
-echo "fj6xElEFoe@7road" |passwd --stdin root 
+echo "aad" |passwd --stdin root 
 yum --skip-broken -y install lrzsz dos2unix expect ntp curl bind-utils which syslog vim* wget curl zip unzip openssh bc mysql
 cd /etc/ssh/
 cp sshd_config sshd_config.bak
